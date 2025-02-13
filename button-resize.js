@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let noPressCount = 0;
 
     document.getElementById('no2').addEventListener('click', function() {
-        document.getElementById('gif').src = 'main/sad-wher.gif';  // Change to a second GIF
+        document.getElementById('gif').src = './main/sad-wher.gif';  // Change to a second GIF
         document.getElementById('sad').style.display = 'block';  // Show more text
        
         noPressCount++; 
@@ -65,9 +65,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
         const yaaaay = document.querySelector('.yay h1');
 
-        document.getElementById('gif').src = 'main/dancing.gif';
+        document.getElementById('gif').src = './main/dancing.gif';
 
-        document.body.style.backgroundImage = "url('main/confetti.gif')";        
+        document.body.style.backgroundImage = "url('./main/confetti.gif')";        
         document.getElementById('sad').style.display = 'none';  // Show more text
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundPosition = "center center";

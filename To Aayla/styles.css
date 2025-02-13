@@ -1,0 +1,135 @@
+body{
+    background-color: lightpink;
+}
+
+.typewriter , .yay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    color: darkred;
+    margin-bottom: 10px;
+}
+
+.typewriter h1{
+    font-size: 80px;
+    border-right: 3px solid transparent;
+    overflow:hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(12) forwards;
+    transition: border-color 0.2s linear;
+    transition-delay: 1.4s;
+}
+
+.typewriter .line{
+    font-size: 40px;
+    border-right: 3px solid transparent;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(31) forwards;
+    animation-delay: 2s;
+} 
+
+
+.typewriter .line2{
+    font-size: 40px;
+    border-right: 3px solid;
+    opacity: 0;
+    overflow:hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(35) forwards, blink 1s step-end infinite;
+    animation-delay: 6s;
+}
+
+@keyframes typing{
+    from {
+        width: 0;
+        opacity: 1;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+.btn , .yay .btn2{ 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    max-width: 80%;
+    margin: 0 auto; 
+    gap: 20px; 
+    height: 80px;
+
+}
+
+#yes, #yes2{
+    background-color: green;
+    color: antiquewhite; 
+    position: relative;
+    font-size: 15px;
+    padding:10px 40px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 20px;
+    border-color: darkgreen;
+    border-style:solid;
+}
+
+#no, #no2{
+    background-color: red;
+    color: antiquewhite; 
+    position: relative;
+    font-size: 15px;
+    padding:10px 40px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 20px;
+    border-color: darkred;
+    border-style:solid;
+}
+
+.yay h1{
+    font-size: 60px;
+    display: none;
+
+}
+
+.yay #gif, .yay #gif2{
+    max-width: 300px;
+    display: none; 
+    margin-top: 20px;
+
+
+}
+
+.yay .btn2{
+    display: none;
+    margin-top: 30px;
+}
+
+.yay #sad {
+    display: none;
+    text-align: center;
+    color: antiquewhite;
+    margin-top: 10px;
+}
+
+#yes2{
+    z-index: 10;
+    width: auto;
+    max-width: 100%; 
+}
+
+#yes.grow {
+    font-size: 30px; /* Increase font size */
+    padding: 20px 60px; /* Increase padding */
+}

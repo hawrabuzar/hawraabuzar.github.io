@@ -1,5 +1,5 @@
 body{
-    background-color: lightpink;
+    background-color: black;
 }
 
 .typewriter , .yay{
@@ -8,7 +8,7 @@ body{
     align-items: center;
     justify-content: center;
     font-family: monospace;
-    color: darkred;
+    color: antiquewhite;
     margin-bottom: 10px;
 }
 
